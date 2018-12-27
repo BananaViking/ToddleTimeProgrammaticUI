@@ -32,18 +32,12 @@ class FarmViewController: UIViewController {
         
         view.backgroundColor = #colorLiteral(red: 0.1921568627, green: 0.6392156863, blue: 0.2549019608, alpha: 1)
         
-        button0.tag = 1
-        button1.tag = 2
-        button2.tag = 3
-        button3.tag = 4
-        button4.tag = 5
-        button5.tag = 6
-        
         let buttons = [button0, button1, button2, button3, button4, button5]
         
-        for button in buttons {
-            button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-            cardBank.setupButtonStyle(button: button)
+        for i in 0...5 {
+            buttons[i].tag = i + 1  // tag should be 1 more than button number
+            buttons[i].backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+            cardBank.setupButtonStyle(button: buttons[i])
         }
         
         let horizontalStackViews = [topStackView, middleStackView, bottomStackView]

@@ -32,18 +32,12 @@ class NumbersViewController: UIViewController {
         
         view.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         
-        button12.tag = 13
-        button13.tag = 14
-        button14.tag = 15
-        button15.tag = 16
-        button16.tag = 17
-        button17.tag = 18
-        
         let buttons = [button12, button13, button14, button15, button16, button17]
         
-        for button in buttons {
-            button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
-            cardBank.setupButtonStyle(button: button)
+        for i in 0...5 {
+            buttons[i].tag = i + 13  // tag should be 1 more than button number
+            buttons[i].backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
+            cardBank.setupButtonStyle(button: buttons[i])
         }
         
         let horizontalStackViews = [topStackView, middleStackView, bottomStackView]

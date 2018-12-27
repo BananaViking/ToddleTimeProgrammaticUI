@@ -32,18 +32,12 @@ class MarketViewController: UIViewController {
         
         view.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         
-        button6.tag = 7
-        button7.tag = 8
-        button8.tag = 9
-        button9.tag = 10
-        button10.tag = 11
-        button11.tag = 12
-        
         let buttons = [button6, button7, button8, button9, button10, button11]
         
-        for button in buttons {
-            button.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
-            cardBank.setupButtonStyle(button: button)
+        for i in 0...5 {
+            buttons[i].tag = i + 7  // tag should be 1 more than button number
+            buttons[i].backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
+            cardBank.setupButtonStyle(button: buttons[i])
         }
         
         let horizontalStackViews = [topStackView, middleStackView, bottomStackView]

@@ -32,18 +32,12 @@ class ShapesViewController: UIViewController {
         
         view.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         
-        button18.tag = 19
-        button19.tag = 20
-        button20.tag = 21
-        button21.tag = 22
-        button22.tag = 23
-        button23.tag = 24
-        
         let buttons = [button18, button19, button20, button21, button22, button23]
         
-        for button in buttons {
-            button.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
-            cardBank.setupButtonStyle(button: button)
+        for i in 0...5 {
+            buttons[i].tag = i + 19  // tag should be 1 more than button number
+            buttons[i].backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
+            cardBank.setupButtonStyle(button: buttons[i])
         }
         
         let horizontalStackViews = [topStackView, middleStackView, bottomStackView]
