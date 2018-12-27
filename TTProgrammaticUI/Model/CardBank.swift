@@ -43,7 +43,13 @@ class CardBank {
     ]
     
     @objc func tapButton(sender: UIButton) {
-        print("button tapped")
+        for i in 0...23 {
+            if sender.tag == i + 1 {
+                if let image = UIImage(named: cards[i].image) {
+                    flipCard(withImage: image, on: sender)
+                }
+            }
+        }
     }
     
     func setupButtonStyle(button: UIButton) {
@@ -76,6 +82,27 @@ class CardBank {
             }
         }
     }
+    
+//    func flipCard(withImage image: UIImage, on button: UIButton) {
+//        if button.currentImage == image {
+//            playSound(forObject: "flipCardSound")
+//            button.setImage(nil, for: .normal)
+//
+//            for i in 0...23 {
+//                if image == UIImage(named: cards[i].image) {
+//                    button.backgroundColor = cards[i].color
+//                }
+//            }
+//        } else {
+//            button.setImage(image, for: .normal)
+//
+//            for i in 0...23 {
+//                if image == UIImage(named: cards[i].image) {
+//                    playSound(forObject: cards[i].sound)
+//                }
+//            }
+//        }
+//    }
     
     func playSound(forObject: String) {
         guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else { return }

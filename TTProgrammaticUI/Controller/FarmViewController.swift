@@ -29,6 +29,13 @@ class FarmViewController: UIViewController {
         
         view.backgroundColor = #colorLiteral(red: 0.1921568627, green: 0.6392156863, blue: 0.2549019608, alpha: 1)
         
+        button0.tag = 1
+        button1.tag = 2
+        button2.tag = 3
+        button3.tag = 4
+        button4.tag = 5
+        button5.tag = 6
+        
         let buttons = [button0, button1, button2, button3, button4, button5]
         
         for button in buttons {
