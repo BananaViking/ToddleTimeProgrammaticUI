@@ -35,7 +35,7 @@ class NumbersViewController: UIViewController {
         let buttons = [button12, button13, button14, button15, button16, button17]
         
         for i in 0...5 {
-            buttons[i].tag = i + 13  // tag should be 1 more than button number
+            buttons[i].tag = i + 13  // tag is 13 more than Numbers button index
             buttons[i].backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
             cardBank.setupButtonStyle(button: buttons[i])
         }
@@ -95,7 +95,7 @@ class NumbersViewController: UIViewController {
         for i in 13...18 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+                card.backgroundColor = cardBank.cards[i - 1].color  // tag is 1 more than card index
             }
         }
     }

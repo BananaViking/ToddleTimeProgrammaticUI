@@ -35,7 +35,7 @@ class ShapesViewController: UIViewController {
         let buttons = [button18, button19, button20, button21, button22, button23]
         
         for i in 0...5 {
-            buttons[i].tag = i + 19  // tag should be 1 more than button number
+            buttons[i].tag = i + 19  // tag is 19 more than Shapes button index
             buttons[i].backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
             cardBank.setupButtonStyle(button: buttons[i])
         }
@@ -95,7 +95,7 @@ class ShapesViewController: UIViewController {
         for i in 19...24 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+                card.backgroundColor = cardBank.cards[i - 1].color  // tag is 1 more than card index
             }
         }
     }

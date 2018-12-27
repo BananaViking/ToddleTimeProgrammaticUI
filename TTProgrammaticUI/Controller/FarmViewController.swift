@@ -35,7 +35,7 @@ class FarmViewController: UIViewController {
         let buttons = [button0, button1, button2, button3, button4, button5]
         
         for i in 0...5 {
-            buttons[i].tag = i + 1  // tag should be 1 more than button number
+            buttons[i].tag = i + 1  // tag is 1 more than Farm button index
             buttons[i].backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
             cardBank.setupButtonStyle(button: buttons[i])
         }
@@ -95,7 +95,7 @@ class FarmViewController: UIViewController {
         for i in 1...6 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+                card.backgroundColor = cardBank.cards[i - 1].color  // tag is 1 more than card index
             }
         }
     }

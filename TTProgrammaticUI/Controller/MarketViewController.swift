@@ -35,7 +35,7 @@ class MarketViewController: UIViewController {
         let buttons = [button6, button7, button8, button9, button10, button11]
         
         for i in 0...5 {
-            buttons[i].tag = i + 7  // tag should be 1 more than button number
+            buttons[i].tag = i + 7  // tag is 7 more than Market button index
             buttons[i].backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
             cardBank.setupButtonStyle(button: buttons[i])
         }
@@ -95,7 +95,7 @@ class MarketViewController: UIViewController {
         for i in 7...12 {
             if let card = view.viewWithTag(i) as? UIButton {
                 card.setImage(nil, for: .normal)
-                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+                card.backgroundColor = cardBank.cards[i - 1].color  // tag is 1 more than card index
             }
         }
     }
