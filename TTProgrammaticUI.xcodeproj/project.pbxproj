@@ -111,7 +111,6 @@
 				0531EDCD21D46E4200212A27 /* View */,
 				0531EE0A21D46E6900212A27 /* Model */,
 				0531EDCE21D46E5100212A27 /* Controller */,
-				0531EDC421D46D5900212A27 /* LaunchScreen.storyboard */,
 			);
 			path = TTProgrammaticUI;
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				0531EDBF21D46D5800212A27 /* Main.storyboard */,
+				0531EDC421D46D5900212A27 /* LaunchScreen.storyboard */,
 				0531EDC221D46D5900212A27 /* Assets.xcassets */,
 			);
 			path = View;
