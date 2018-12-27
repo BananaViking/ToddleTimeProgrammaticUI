@@ -53,6 +53,8 @@ class CardBank {
     }
     
     func setupButtonStyle(button: UIButton) {
+        button.widthAnchor.constraint(greaterThanOrEqualToConstant: 115).isActive = true
+        button.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
         button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
@@ -82,27 +84,6 @@ class CardBank {
             }
         }
     }
-    
-//    func flipCard(withImage image: UIImage, on button: UIButton) {
-//        if button.currentImage == image {
-//            playSound(forObject: "flipCardSound")
-//            button.setImage(nil, for: .normal)
-//
-//            for i in 0...23 {
-//                if image == UIImage(named: cards[i].image) {
-//                    button.backgroundColor = cards[i].color
-//                }
-//            }
-//        } else {
-//            button.setImage(image, for: .normal)
-//
-//            for i in 0...23 {
-//                if image == UIImage(named: cards[i].image) {
-//                    playSound(forObject: cards[i].sound)
-//                }
-//            }
-//        }
-//    }
     
     func playSound(forObject: String) {
         guard let url = Bundle.main.url(forResource: forObject, withExtension: "wav") else { return }
