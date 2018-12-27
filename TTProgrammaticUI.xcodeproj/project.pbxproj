@@ -8,20 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		0531EDBC21D46D5800212A27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EDBB21D46D5800212A27 /* AppDelegate.swift */; };
-		0531EDBE21D46D5800212A27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EDBD21D46D5800212A27 /* ViewController.swift */; };
+		0531EDBE21D46D5800212A27 /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EDBD21D46D5800212A27 /* FarmViewController.swift */; };
 		0531EDC121D46D5800212A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDBF21D46D5800212A27 /* Main.storyboard */; };
 		0531EDC321D46D5900212A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDC221D46D5900212A27 /* Assets.xcassets */; };
 		0531EDC621D46D5900212A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDC421D46D5900212A27 /* LaunchScreen.storyboard */; };
+		0531EDEF21D46E6400212A27 /* bananaSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD121D46E6400212A27 /* bananaSound.wav */; };
+		0531EDF021D46E6400212A27 /* strawberrySound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD221D46E6400212A27 /* strawberrySound.wav */; };
+		0531EDF121D46E6400212A27 /* pepperSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD321D46E6400212A27 /* pepperSound.wav */; };
+		0531EDF221D46E6400212A27 /* broccoliSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD421D46E6400212A27 /* broccoliSound.wav */; };
+		0531EDF321D46E6400212A27 /* carrotSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD521D46E6400212A27 /* carrotSound.wav */; };
+		0531EDF421D46E6400212A27 /* appleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD621D46E6400212A27 /* appleSound.wav */; };
+		0531EDF621D46E6400212A27 /* circleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDD921D46E6400212A27 /* circleSound.wav */; };
+		0531EDF721D46E6400212A27 /* starSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDDA21D46E6400212A27 /* starSound.wav */; };
+		0531EDF821D46E6400212A27 /* squareSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDDB21D46E6400212A27 /* squareSound.wav */; };
+		0531EDF921D46E6400212A27 /* triangleSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDDC21D46E6400212A27 /* triangleSound.wav */; };
+		0531EDFA21D46E6400212A27 /* heartSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDDD21D46E6400212A27 /* heartSound.wav */; };
+		0531EDFB21D46E6400212A27 /* diamondSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDDE21D46E6400212A27 /* diamondSound.wav */; };
+		0531EDFC21D46E6400212A27 /* cowSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE021D46E6400212A27 /* cowSound.wav */; };
+		0531EDFD21D46E6400212A27 /* catSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE121D46E6400212A27 /* catSound.wav */; };
+		0531EDFE21D46E6400212A27 /* horseSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE221D46E6400212A27 /* horseSound.wav */; };
+		0531EDFF21D46E6400212A27 /* dogSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE321D46E6400212A27 /* dogSound.wav */; };
+		0531EE0021D46E6400212A27 /* chickenSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE421D46E6400212A27 /* chickenSound.wav */; };
+		0531EE0121D46E6400212A27 /* pigSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE521D46E6400212A27 /* pigSound.wav */; };
+		0531EE0221D46E6400212A27 /* pageTurnSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE621D46E6400212A27 /* pageTurnSound.wav */; };
+		0531EE0321D46E6400212A27 /* flipCardSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE721D46E6400212A27 /* flipCardSound.wav */; };
+		0531EE0421D46E6400212A27 /* sixSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDE921D46E6400212A27 /* sixSound.wav */; };
+		0531EE0521D46E6400212A27 /* fourSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEA21D46E6400212A27 /* fourSound.wav */; };
+		0531EE0621D46E6400212A27 /* oneSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEB21D46E6400212A27 /* oneSound.wav */; };
+		0531EE0721D46E6400212A27 /* threeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEC21D46E6400212A27 /* threeSound.wav */; };
+		0531EE0821D46E6400212A27 /* twoSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDED21D46E6400212A27 /* twoSound.wav */; };
+		0531EE0921D46E6400212A27 /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEE21D46E6400212A27 /* fiveSound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0531EDB821D46D5800212A27 /* TTProgrammaticUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTProgrammaticUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0531EDBB21D46D5800212A27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0531EDBD21D46D5800212A27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0531EDBD21D46D5800212A27 /* FarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
 		0531EDC021D46D5800212A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0531EDC221D46D5900212A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0531EDC521D46D5900212A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0531EDC721D46D5900212A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0531EDD121D46E6400212A27 /* bananaSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bananaSound.wav; sourceTree = "<group>"; };
+		0531EDD221D46E6400212A27 /* strawberrySound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = strawberrySound.wav; sourceTree = "<group>"; };
+		0531EDD321D46E6400212A27 /* pepperSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pepperSound.wav; sourceTree = "<group>"; };
+		0531EDD421D46E6400212A27 /* broccoliSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = broccoliSound.wav; sourceTree = "<group>"; };
+		0531EDD521D46E6400212A27 /* carrotSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = carrotSound.wav; sourceTree = "<group>"; };
+		0531EDD621D46E6400212A27 /* appleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appleSound.wav; sourceTree = "<group>"; };
+		0531EDD921D46E6400212A27 /* circleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = circleSound.wav; sourceTree = "<group>"; };
+		0531EDDA21D46E6400212A27 /* starSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = starSound.wav; sourceTree = "<group>"; };
+		0531EDDB21D46E6400212A27 /* squareSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = squareSound.wav; sourceTree = "<group>"; };
+		0531EDDC21D46E6400212A27 /* triangleSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = triangleSound.wav; sourceTree = "<group>"; };
+		0531EDDD21D46E6400212A27 /* heartSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heartSound.wav; sourceTree = "<group>"; };
+		0531EDDE21D46E6400212A27 /* diamondSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diamondSound.wav; sourceTree = "<group>"; };
+		0531EDE021D46E6400212A27 /* cowSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cowSound.wav; sourceTree = "<group>"; };
+		0531EDE121D46E6400212A27 /* catSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catSound.wav; sourceTree = "<group>"; };
+		0531EDE221D46E6400212A27 /* horseSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horseSound.wav; sourceTree = "<group>"; };
+		0531EDE321D46E6400212A27 /* dogSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogSound.wav; sourceTree = "<group>"; };
+		0531EDE421D46E6400212A27 /* chickenSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chickenSound.wav; sourceTree = "<group>"; };
+		0531EDE521D46E6400212A27 /* pigSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pigSound.wav; sourceTree = "<group>"; };
+		0531EDE621D46E6400212A27 /* pageTurnSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pageTurnSound.wav; sourceTree = "<group>"; };
+		0531EDE721D46E6400212A27 /* flipCardSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flipCardSound.wav; sourceTree = "<group>"; };
+		0531EDE921D46E6400212A27 /* sixSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sixSound.wav; sourceTree = "<group>"; };
+		0531EDEA21D46E6400212A27 /* fourSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fourSound.wav; sourceTree = "<group>"; };
+		0531EDEB21D46E6400212A27 /* oneSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oneSound.wav; sourceTree = "<group>"; };
+		0531EDEC21D46E6400212A27 /* threeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = threeSound.wav; sourceTree = "<group>"; };
+		0531EDED21D46E6400212A27 /* twoSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = twoSound.wav; sourceTree = "<group>"; };
+		0531EDEE21D46E6400212A27 /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +107,103 @@
 			isa = PBXGroup;
 			children = (
 				0531EDBB21D46D5800212A27 /* AppDelegate.swift */,
-				0531EDBD21D46D5800212A27 /* ViewController.swift */,
-				0531EDBF21D46D5800212A27 /* Main.storyboard */,
-				0531EDC221D46D5900212A27 /* Assets.xcassets */,
-				0531EDC421D46D5900212A27 /* LaunchScreen.storyboard */,
 				0531EDC721D46D5900212A27 /* Info.plist */,
+				0531EDCD21D46E4200212A27 /* View */,
+				0531EE0A21D46E6900212A27 /* Model */,
+				0531EDCE21D46E5100212A27 /* Controller */,
+				0531EDC421D46D5900212A27 /* LaunchScreen.storyboard */,
 			);
 			path = TTProgrammaticUI;
+			sourceTree = "<group>";
+		};
+		0531EDCD21D46E4200212A27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDBF21D46D5800212A27 /* Main.storyboard */,
+				0531EDC221D46D5900212A27 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0531EDCE21D46E5100212A27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDBD21D46D5800212A27 /* FarmViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0531EDCF21D46E6400212A27 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDE721D46E6400212A27 /* flipCardSound.wav */,
+				0531EDE621D46E6400212A27 /* pageTurnSound.wav */,
+				0531EDDF21D46E6400212A27 /* Farm Sounds */,
+				0531EDD021D46E6400212A27 /* Market Sounds */,
+				0531EDE821D46E6400212A27 /* Number Sounds */,
+				0531EDD821D46E6400212A27 /* Shape Sounds */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		0531EDD021D46E6400212A27 /* Market Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDD121D46E6400212A27 /* bananaSound.wav */,
+				0531EDD221D46E6400212A27 /* strawberrySound.wav */,
+				0531EDD321D46E6400212A27 /* pepperSound.wav */,
+				0531EDD421D46E6400212A27 /* broccoliSound.wav */,
+				0531EDD521D46E6400212A27 /* carrotSound.wav */,
+				0531EDD621D46E6400212A27 /* appleSound.wav */,
+			);
+			path = "Market Sounds";
+			sourceTree = "<group>";
+		};
+		0531EDD821D46E6400212A27 /* Shape Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDD921D46E6400212A27 /* circleSound.wav */,
+				0531EDDA21D46E6400212A27 /* starSound.wav */,
+				0531EDDB21D46E6400212A27 /* squareSound.wav */,
+				0531EDDC21D46E6400212A27 /* triangleSound.wav */,
+				0531EDDD21D46E6400212A27 /* heartSound.wav */,
+				0531EDDE21D46E6400212A27 /* diamondSound.wav */,
+			);
+			path = "Shape Sounds";
+			sourceTree = "<group>";
+		};
+		0531EDDF21D46E6400212A27 /* Farm Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDE021D46E6400212A27 /* cowSound.wav */,
+				0531EDE121D46E6400212A27 /* catSound.wav */,
+				0531EDE221D46E6400212A27 /* horseSound.wav */,
+				0531EDE321D46E6400212A27 /* dogSound.wav */,
+				0531EDE421D46E6400212A27 /* chickenSound.wav */,
+				0531EDE521D46E6400212A27 /* pigSound.wav */,
+			);
+			path = "Farm Sounds";
+			sourceTree = "<group>";
+		};
+		0531EDE821D46E6400212A27 /* Number Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDE921D46E6400212A27 /* sixSound.wav */,
+				0531EDEA21D46E6400212A27 /* fourSound.wav */,
+				0531EDEB21D46E6400212A27 /* oneSound.wav */,
+				0531EDEC21D46E6400212A27 /* threeSound.wav */,
+				0531EDED21D46E6400212A27 /* twoSound.wav */,
+				0531EDEE21D46E6400212A27 /* fiveSound.wav */,
+			);
+			path = "Number Sounds";
+			sourceTree = "<group>";
+		};
+		0531EE0A21D46E6900212A27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0531EDCF21D46E6400212A27 /* Sounds */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +264,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0531EDF021D46E6400212A27 /* strawberrySound.wav in Resources */,
+				0531EE0621D46E6400212A27 /* oneSound.wav in Resources */,
+				0531EDFB21D46E6400212A27 /* diamondSound.wav in Resources */,
+				0531EE0421D46E6400212A27 /* sixSound.wav in Resources */,
+				0531EDF621D46E6400212A27 /* circleSound.wav in Resources */,
+				0531EE0321D46E6400212A27 /* flipCardSound.wav in Resources */,
+				0531EDFF21D46E6400212A27 /* dogSound.wav in Resources */,
+				0531EDF921D46E6400212A27 /* triangleSound.wav in Resources */,
 				0531EDC621D46D5900212A27 /* LaunchScreen.storyboard in Resources */,
+				0531EE0521D46E6400212A27 /* fourSound.wav in Resources */,
+				0531EDF121D46E6400212A27 /* pepperSound.wav in Resources */,
+				0531EE0221D46E6400212A27 /* pageTurnSound.wav in Resources */,
+				0531EDEF21D46E6400212A27 /* bananaSound.wav in Resources */,
+				0531EDFC21D46E6400212A27 /* cowSound.wav in Resources */,
+				0531EDF821D46E6400212A27 /* squareSound.wav in Resources */,
+				0531EDF221D46E6400212A27 /* broccoliSound.wav in Resources */,
+				0531EDF421D46E6400212A27 /* appleSound.wav in Resources */,
 				0531EDC321D46D5900212A27 /* Assets.xcassets in Resources */,
+				0531EDFA21D46E6400212A27 /* heartSound.wav in Resources */,
+				0531EDF721D46E6400212A27 /* starSound.wav in Resources */,
 				0531EDC121D46D5800212A27 /* Main.storyboard in Resources */,
+				0531EDFD21D46E6400212A27 /* catSound.wav in Resources */,
+				0531EE0921D46E6400212A27 /* fiveSound.wav in Resources */,
+				0531EDF321D46E6400212A27 /* carrotSound.wav in Resources */,
+				0531EE0121D46E6400212A27 /* pigSound.wav in Resources */,
+				0531EE0821D46E6400212A27 /* twoSound.wav in Resources */,
+				0531EDFE21D46E6400212A27 /* horseSound.wav in Resources */,
+				0531EE0021D46E6400212A27 /* chickenSound.wav in Resources */,
+				0531EE0721D46E6400212A27 /* threeSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0531EDBE21D46D5800212A27 /* ViewController.swift in Sources */,
+				0531EDBE21D46D5800212A27 /* FarmViewController.swift in Sources */,
 				0531EDBC21D46D5800212A27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

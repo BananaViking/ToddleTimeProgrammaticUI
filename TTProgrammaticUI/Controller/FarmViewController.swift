@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FarmViewController.swift
 //  TTProgrammaticUI
 //
 //  Created by Banana Viking on 12/26/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FarmViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
