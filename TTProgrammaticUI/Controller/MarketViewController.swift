@@ -27,6 +27,9 @@ class MarketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground),
+                                               name: UIApplication.didEnterBackgroundNotification, object: nil)
+        
         view.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
         
         button6.tag = 7
@@ -83,5 +86,23 @@ class MarketViewController: UIViewController {
         stackView.spacing = 30
         stackView.translatesAutoresizingMaskIntoConstraints = false
         allStackView.addArrangedSubview(stackView)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        cardBank.playSound(forObject: "pageTurnSound")
+        resetCards()
+    }
+    
+    @objc func appDidEnterBackground() {
+        resetCards()
+    }
+    
+    func resetCards() {
+        for i in 7...12 {
+            if let card = view.viewWithTag(i) as? UIButton {
+                card.setImage(nil, for: .normal)
+                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+            }
+        }
     }
 }

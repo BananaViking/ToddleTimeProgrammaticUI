@@ -27,6 +27,9 @@ class ShapesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground),
+                                               name: UIApplication.didEnterBackgroundNotification, object: nil)
+        
         view.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         
         button18.tag = 19
@@ -83,5 +86,23 @@ class ShapesViewController: UIViewController {
         stackView.spacing = 30
         stackView.translatesAutoresizingMaskIntoConstraints = false
         allStackView.addArrangedSubview(stackView)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        cardBank.playSound(forObject: "pageTurnSound")
+        resetCards()
+    }
+    
+    @objc func appDidEnterBackground() {
+        resetCards()
+    }
+    
+    func resetCards() {
+        for i in 19...24 {
+            if let card = view.viewWithTag(i) as? UIButton {
+                card.setImage(nil, for: .normal)
+                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+            }
+        }
     }
 }

@@ -27,6 +27,9 @@ class FarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(appDidEnterBackground),
+                                               name: UIApplication.didEnterBackgroundNotification, object: nil)
+        
         view.backgroundColor = #colorLiteral(red: 0.1921568627, green: 0.6392156863, blue: 0.2549019608, alpha: 1)
         
         button0.tag = 1
@@ -83,5 +86,23 @@ class FarmViewController: UIViewController {
         stackView.spacing = 30
         stackView.translatesAutoresizingMaskIntoConstraints = false
         allStackView.addArrangedSubview(stackView)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        cardBank.playSound(forObject: "pageTurnSound")
+        resetCards()
+    }
+    
+    @objc func appDidEnterBackground() {
+        resetCards()
+    }
+    
+    func resetCards() {
+        for i in 1...6 {
+            if let card = view.viewWithTag(i) as? UIButton {
+                card.setImage(nil, for: .normal)
+                card.backgroundColor = cardBank.cards[i - 1].color  // convert tag to index
+            }
+        }
     }
 }
