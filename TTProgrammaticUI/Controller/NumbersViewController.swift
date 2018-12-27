@@ -1,5 +1,5 @@
 //
-//  FarmViewController.swift
+//  NumbersViewController.swift
 //  TTProgrammaticUI
 //
 //  Created by Banana Viking on 12/26/18.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-class FarmViewController: UIViewController {
+class NumbersViewController: UIViewController {
     
     let cardBank = CardBank()
     
-    let button0 = UIButton()
-    let button1 = UIButton()
-    let button2 = UIButton()
-    let button3 = UIButton()
-    let button4 = UIButton()
-    let button5 = UIButton()
+    let button12 = UIButton()
+    let button13 = UIButton()
+    let button14 = UIButton()
+    let button15 = UIButton()
+    let button16 = UIButton()
+    let button17 = UIButton()
     
     let topStackView = UIStackView()
     let middleStackView = UIStackView()
@@ -27,19 +27,19 @@ class FarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.1921568627, green: 0.6392156863, blue: 0.2549019608, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         
-        button0.tag = 1
-        button1.tag = 2
-        button2.tag = 3
-        button3.tag = 4
-        button4.tag = 5
-        button5.tag = 6
+        button12.tag = 13
+        button13.tag = 14
+        button14.tag = 15
+        button15.tag = 16
+        button16.tag = 17
+        button17.tag = 18
         
-        let buttons = [button0, button1, button2, button3, button4, button5]
+        let buttons = [button12, button13, button14, button15, button16, button17]
         
         for button in buttons {
-            button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.462745098, blue: 0.7647058824, alpha: 1)
             cardBank.setupButtonStyle(button: button)
         }
         
@@ -49,14 +49,14 @@ class FarmViewController: UIViewController {
             setupHorizontalStackView(stackView: stackView)
         }
         
-        topStackView.addArrangedSubview(button0)
-        topStackView.addArrangedSubview(button1)
+        topStackView.addArrangedSubview(button12)
+        topStackView.addArrangedSubview(button13)
         
-        middleStackView.addArrangedSubview(button2)
-        middleStackView.addArrangedSubview(button3)
+        middleStackView.addArrangedSubview(button14)
+        middleStackView.addArrangedSubview(button15)
         
-        bottomStackView.addArrangedSubview(button4)
-        bottomStackView.addArrangedSubview(button5)
+        bottomStackView.addArrangedSubview(button16)
+        bottomStackView.addArrangedSubview(button17)
         
         // allStackView
         allStackView.axis = .vertical

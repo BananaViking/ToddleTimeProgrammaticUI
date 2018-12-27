@@ -1,5 +1,5 @@
 //
-//  FarmViewController.swift
+//  ShapesViewController.swift
 //  TTProgrammaticUI
 //
 //  Created by Banana Viking on 12/26/18.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-class FarmViewController: UIViewController {
+class ShapesViewController: UIViewController {
     
     let cardBank = CardBank()
     
-    let button0 = UIButton()
-    let button1 = UIButton()
-    let button2 = UIButton()
-    let button3 = UIButton()
-    let button4 = UIButton()
-    let button5 = UIButton()
+    let button18 = UIButton()
+    let button19 = UIButton()
+    let button20 = UIButton()
+    let button21 = UIButton()
+    let button22 = UIButton()
+    let button23 = UIButton()
     
     let topStackView = UIStackView()
     let middleStackView = UIStackView()
@@ -27,19 +27,19 @@ class FarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = #colorLiteral(red: 0.1921568627, green: 0.6392156863, blue: 0.2549019608, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.1098039216, blue: 0.1411764706, alpha: 1)
         
-        button0.tag = 1
-        button1.tag = 2
-        button2.tag = 3
-        button3.tag = 4
-        button4.tag = 5
-        button5.tag = 6
+        button18.tag = 19
+        button19.tag = 20
+        button20.tag = 21
+        button21.tag = 22
+        button22.tag = 23
+        button23.tag = 24
         
-        let buttons = [button0, button1, button2, button3, button4, button5]
+        let buttons = [button18, button19, button20, button21, button22, button23]
         
         for button in buttons {
-            button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 0.4745098039, green: 0.1764705882, blue: 0.5725490196, alpha: 1)
             cardBank.setupButtonStyle(button: button)
         }
         
@@ -49,14 +49,14 @@ class FarmViewController: UIViewController {
             setupHorizontalStackView(stackView: stackView)
         }
         
-        topStackView.addArrangedSubview(button0)
-        topStackView.addArrangedSubview(button1)
+        topStackView.addArrangedSubview(button18)
+        topStackView.addArrangedSubview(button19)
         
-        middleStackView.addArrangedSubview(button2)
-        middleStackView.addArrangedSubview(button3)
+        middleStackView.addArrangedSubview(button20)
+        middleStackView.addArrangedSubview(button21)
         
-        bottomStackView.addArrangedSubview(button4)
-        bottomStackView.addArrangedSubview(button5)
+        bottomStackView.addArrangedSubview(button22)
+        bottomStackView.addArrangedSubview(button23)
         
         // allStackView
         allStackView.axis = .vertical

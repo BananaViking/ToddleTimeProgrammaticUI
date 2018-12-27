@@ -40,6 +40,9 @@
 		0531EE0921D46E6400212A27 /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEE21D46E6400212A27 /* fiveSound.wav */; };
 		0531EE0C21D4769700212A27 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE0B21D4769700212A27 /* Card.swift */; };
 		0531EE0E21D476B000212A27 /* CardBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE0D21D476B000212A27 /* CardBank.swift */; };
+		0531EE1021D47D1900212A27 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE0F21D47D1900212A27 /* MarketViewController.swift */; };
+		0531EE1221D47E4C00212A27 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE1121D47E4C00212A27 /* NumbersViewController.swift */; };
+		0531EE1421D47E5800212A27 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE1321D47E5800212A27 /* ShapesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		0531EDEE21D46E6400212A27 /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
 		0531EE0B21D4769700212A27 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0531EE0D21D476B000212A27 /* CardBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBank.swift; sourceTree = "<group>"; };
+		0531EE0F21D47D1900212A27 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		0531EE1121D47E4C00212A27 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
+		0531EE1321D47E5800212A27 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				0531EDBD21D46D5800212A27 /* FarmViewController.swift */,
+				0531EE0F21D47D1900212A27 /* MarketViewController.swift */,
+				0531EE1121D47E4C00212A27 /* NumbersViewController.swift */,
+				0531EE1321D47E5800212A27 /* ShapesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,8 +320,11 @@
 			files = (
 				0531EDBE21D46D5800212A27 /* FarmViewController.swift in Sources */,
 				0531EE0C21D4769700212A27 /* Card.swift in Sources */,
+				0531EE1021D47D1900212A27 /* MarketViewController.swift in Sources */,
+				0531EE1221D47E4C00212A27 /* NumbersViewController.swift in Sources */,
 				0531EDBC21D46D5800212A27 /* AppDelegate.swift in Sources */,
 				0531EE0E21D476B000212A27 /* CardBank.swift in Sources */,
+				0531EE1421D47E5800212A27 /* ShapesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
