@@ -38,6 +38,8 @@
 		0531EE0721D46E6400212A27 /* threeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEC21D46E6400212A27 /* threeSound.wav */; };
 		0531EE0821D46E6400212A27 /* twoSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDED21D46E6400212A27 /* twoSound.wav */; };
 		0531EE0921D46E6400212A27 /* fiveSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0531EDEE21D46E6400212A27 /* fiveSound.wav */; };
+		0531EE0C21D4769700212A27 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE0B21D4769700212A27 /* Card.swift */; };
+		0531EE0E21D476B000212A27 /* CardBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE0D21D476B000212A27 /* CardBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		0531EDEC21D46E6400212A27 /* threeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = threeSound.wav; sourceTree = "<group>"; };
 		0531EDED21D46E6400212A27 /* twoSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = twoSound.wav; sourceTree = "<group>"; };
 		0531EDEE21D46E6400212A27 /* fiveSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fiveSound.wav; sourceTree = "<group>"; };
+		0531EE0B21D4769700212A27 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0531EE0D21D476B000212A27 /* CardBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 		0531EE0A21D46E6900212A27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0531EE0B21D4769700212A27 /* Card.swift */,
+				0531EE0D21D476B000212A27 /* CardBank.swift */,
 				0531EDCF21D46E6400212A27 /* Sounds */,
 			);
 			path = Model;
@@ -304,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0531EDBE21D46D5800212A27 /* FarmViewController.swift in Sources */,
+				0531EE0C21D4769700212A27 /* Card.swift in Sources */,
 				0531EDBC21D46D5800212A27 /* AppDelegate.swift in Sources */,
+				0531EE0E21D476B000212A27 /* CardBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

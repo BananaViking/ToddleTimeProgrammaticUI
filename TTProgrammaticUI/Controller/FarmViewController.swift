@@ -9,6 +9,9 @@
 import UIKit
 
 class FarmViewController: UIViewController {
+    
+    let cardBank = CardBank()
+    
     let button0 = UIButton()
     let button1 = UIButton()
     let button2 = UIButton()
@@ -29,7 +32,8 @@ class FarmViewController: UIViewController {
         let buttons = [button0, button1, button2, button3, button4, button5]
         
         for button in buttons {
-            setupButton(button: button)
+            button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+            cardBank.setupButtonStyle(button: button)
         }
         
         let horizontalStackViews = [topStackView, middleStackView, bottomStackView]
@@ -66,18 +70,18 @@ class FarmViewController: UIViewController {
         allStackView.bottomAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -79).isActive = true
     }
     
-    func setupButton(button: UIButton) {
-        button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
-        button.widthAnchor.constraint(greaterThanOrEqualToConstant: 115).isActive = true
-        button.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
-        button.layer.shadowRadius = 4.5
-        button.layer.shadowOpacity = 1
-        
-        button.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)
-    }
+//    func setupButton(button: UIButton) {
+//        button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
+//        button.widthAnchor.constraint(greaterThanOrEqualToConstant: 115).isActive = true
+//        button.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
+//        button.layer.borderWidth = 1
+//        button.layer.borderColor = UIColor.black.cgColor
+//        button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
+//        button.layer.shadowRadius = 4.5
+//        button.layer.shadowOpacity = 1
+//        
+//        button.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)
+//    }
     
     func setupHorizontalStackView(stackView: UIStackView) {
         stackView.axis = .horizontal
@@ -87,8 +91,5 @@ class FarmViewController: UIViewController {
         allStackView.addArrangedSubview(stackView)
     }
     
-    @objc func tapButton(sender: UIButton) {
-        print("button tapped")
-    }
 }
 
