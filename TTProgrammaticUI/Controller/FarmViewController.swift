@@ -66,7 +66,7 @@ class FarmViewController: UIViewController {
         allStackView.bottomAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -79).isActive = true
     }
     
-    func setupButton(button: UIView) {
+    func setupButton(button: UIButton) {
         button.backgroundColor = #colorLiteral(red: 1, green: 0.8235294118, blue: 0.01176470588, alpha: 1)
         button.widthAnchor.constraint(greaterThanOrEqualToConstant: 115).isActive = true
         button.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
@@ -75,6 +75,8 @@ class FarmViewController: UIViewController {
         button.layer.shadowOffset = CGSize(width: 4.5, height: 4.5)
         button.layer.shadowRadius = 4.5
         button.layer.shadowOpacity = 1
+        
+        button.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)
     }
     
     func setupHorizontalStackView(stackView: UIStackView) {
@@ -83,6 +85,10 @@ class FarmViewController: UIViewController {
         stackView.spacing = 30
         stackView.translatesAutoresizingMaskIntoConstraints = false
         allStackView.addArrangedSubview(stackView)
+    }
+    
+    @objc func tapButton(sender: UIButton) {
+        print("button tapped")
     }
 }
 
