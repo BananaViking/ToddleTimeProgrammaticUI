@@ -42,7 +42,6 @@
 		0531EE1021D47D1900212A27 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE0F21D47D1900212A27 /* MarketViewController.swift */; };
 		0531EE1221D47E4C00212A27 /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE1121D47E4C00212A27 /* NumbersViewController.swift */; };
 		0531EE1421D47E5800212A27 /* ShapesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE1321D47E5800212A27 /* ShapesViewController.swift */; };
-		0531EE1621D4802200212A27 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531EE1521D4802200212A27 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,7 +82,6 @@
 		0531EE0F21D47D1900212A27 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		0531EE1121D47E4C00212A27 /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 		0531EE1321D47E5800212A27 /* ShapesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesViewController.swift; sourceTree = "<group>"; };
-		0531EE1521D4802200212A27 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 		0531EDCE21D46E5100212A27 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0531EE1521D4802200212A27 /* CustomTabBarController.swift */,
 				0531EDBD21D46D5800212A27 /* FarmViewController.swift */,
 				0531EE0F21D47D1900212A27 /* MarketViewController.swift */,
 				0531EE1121D47E4C00212A27 /* NumbersViewController.swift */,
@@ -319,7 +316,6 @@
 			files = (
 				0531EDBE21D46D5800212A27 /* FarmViewController.swift in Sources */,
 				0531EE0C21D4769700212A27 /* Card.swift in Sources */,
-				0531EE1621D4802200212A27 /* CustomTabBarController.swift in Sources */,
 				0531EE1021D47D1900212A27 /* MarketViewController.swift in Sources */,
 				0531EE1221D47E4C00212A27 /* NumbersViewController.swift in Sources */,
 				0531EDBC21D46D5800212A27 /* AppDelegate.swift in Sources */,
